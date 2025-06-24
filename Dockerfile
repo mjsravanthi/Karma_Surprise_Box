@@ -12,7 +12,7 @@ WORKDIR /app
 COPY . /app
 
 # Install dependencies
-RUN pip install --no-cache-dir --disable-pip-version-check --no-warn-script-location -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
 
 
 
