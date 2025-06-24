@@ -12,8 +12,8 @@ WORKDIR /app
 COPY . /app
 
 # Install dependencies
-RUN pip install --no-cache-dir -r requirements.txt && \
-    pip install --no-cache-dir scikit-learn==1.6.1
+RUN pip install --no-cache-dir --disable-pip-version-check --no-warn-script-location -r requirements.txt
+
 
 
 # Echo after install
